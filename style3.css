@@ -1,0 +1,218 @@
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+
+section {
+  height: 100%;
+}
+
+
+
+
+
+
+.section1, .section3, .section5 {
+
+  height: 100%;
+  width: 100%;
+
+
+
+}
+
+.section2, .section4 {
+
+  height: 100%;
+  width: 100%;
+
+
+
+}
+
+.hide {
+  display: none !important;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+}
+
+
+#logo-animated{
+  margin-top:6%;
+  margin-left:1.5%;
+  position: absolute;
+  width: 30%;
+  height: 20%;
+  z-index: 2;
+
+}
+
+/* THIS IS FOR LOGO IN NAV BAR */
+#path1, #path2, #path3, #path4, #path5 {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: dash 3s linear forwards infinite;
+}
+
+@keyframes dash {
+  // from {
+  //   stroke-dashoffset: 1000;
+  // }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+  @keyframes draw {
+
+    0%{
+      stroke-dashoffset: 500;
+      animation-timing-function: ease-in;
+    }
+    50%{
+      stroke-dashoffset: 0;
+      animation-timing-function: ease-out;
+    }
+    100%{
+      stroke-dashoffset: 500;
+      animation-timing-function: ease-in;
+    }
+  }
+
+
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .home-page .description .service1 .service2 .service3 .info{
+    font-size: 80px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .home-page .description .service1 .service2 .service3 .info {
+    font-size: 30px;
+  }
+}
+
+
+
+
+.section3{
+  padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.fotter {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  height: 100%;
+  /* background: #0E6B8960; */
+  list-style: none;
+  height: 100px;
+
+
+}
+
+#facebook{
+  display: flex;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 40%;
+
+
+}
+
+#facebook:hover {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+    filter: drop-shadow( 2px  2px 1px rgba(0,0,0,0.5));
+
+}
+
+#facebook-svg{
+  display: flex;
+  align-self: center;
+  width:40px;
+  margin-left: 10%;
+}
+
+
+#location{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 40%;
+}
+
+
+#location:hover {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+  filter: drop-shadow( 2px  2px 1px rgba(0,0,0,0.5));
+  /* text-align: center;
+  cursor: pointer;
+  /* border-radius: 50%;
+  border: 2px solid #D8E2DC; */
+  /* color: #3b5998;
+  box-shadow: 0 0 10px #3b5998;
+  background-color:#0E6B8960; */
+}
+
+#email{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 40%;
+}
+
+#email:hover {
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+    filter: drop-shadow( 2px  2px 1px rgba(0,0,0,0.5));
+}
+
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.info p {
+  color: white;
+  text-align: center;
+  display: flex;
+  line-height: 30px;
+
+}
